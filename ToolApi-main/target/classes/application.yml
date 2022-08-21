@@ -1,0 +1,33 @@
+spring:
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:file:/Users/smile/Desktop/ToolApi/db/tool_api_test
+#    url: jdbc:h2:file:/localhost:3306/test
+#    username: root
+#    password: zhang1133..
+#  连接数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: zhang1133..
+
+#  h2:
+#    console:
+#      path: /h2-console
+#      enabled: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+server:
+  port: 10521
+wx:
+  appId: wxc0016e0846645158
+  secret: 9af77250671836e1316d0750dfcd2030
+logging:
+  file:
+    name: toolApi.log
+
+
