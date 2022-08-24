@@ -22,6 +22,7 @@ spring:
   resources:
     add-mappings: false
 server:
+#  port: 10521
   port: 80
 wx:
   appId: wxc0016e0846645158
